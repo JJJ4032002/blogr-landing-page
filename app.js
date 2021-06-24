@@ -32,15 +32,14 @@ hamburgerMenu.addEventListener("click", function (e) {
   const menu = e.target.parentNode;
   if (hamburgerCount == 0) {
     menu.innerHTML = "";
-    menu.innerHTML = `<img src="./images/icon-close.svg" alt="">`;
+    menu.innerHTML = '<img src="./images/icon-close.svg" alt="">';
     navList.style.transform = `scaleY(100%)`;
     navList.style["transition-duration"] = "0.4s";
-    e.stopPropagation();
-
     hamburgerCount = 1;
+    e.stopPropagation();
   } else {
     menu.innerHTML = "";
-    menu.innerHTML = `<img src="./images/icon-hamburger.svg" alt="">`;
+    menu.innerHTML = '<img src="./images/icon-hamburger.svg" alt="">';
     hamburgerCount = 0;
     navList.style.transform = `scaleY(0)`;
     navList.style["transition-duration"] = "0.4s";
