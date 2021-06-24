@@ -36,6 +36,7 @@ hamburgerMenu.addEventListener("click", function (e) {
     const image = document.createElement("img");
     image.src = "./images/icon-close.svg";
     menu.appendChild(image);
+    navList.style.transform = "";
     navList.style.transform = `scaleY(1)`;
     navList.style["transition-duration"] = "0.4s";
     hamburgerCount = 1;
@@ -45,6 +46,7 @@ hamburgerMenu.addEventListener("click", function (e) {
     image.src = "./images/icon-hamburger.svg";
     menu.appendChild(image);
     hamburgerCount = 0;
+    navList.style.transform = "";
     navList.style.transform = `scaleY(0)`;
     navList.style["transition-duration"] = "0.4s";
     e.stopPropagation();
