@@ -28,18 +28,22 @@ navLinks.forEach(function (e) {
 });
 let hamburgerCount = 0;
 hamburgerMenu.addEventListener("click", function (e) {
-  console.log(e.target.parentNode);
   const menu = e.target.parentNode;
+  e.target.remove();
+  console.log(e.target);
+
   if (hamburgerCount == 0) {
-    menu.innerHTML = "";
-    menu.innerHTML = '<img src="./images/icon-close.svg" alt="">';
+    const image = document.createElement("img");
+    image.src = "./images/icon-close.svg";
+    menu.appendChild(image);
     navList.style.transform = `scaleY(100%)`;
     navList.style["transition-duration"] = "0.4s";
     hamburgerCount = 1;
     e.stopPropagation();
   } else {
-    menu.innerHTML = "";
-    menu.innerHTML = '<img src="./images/icon-hamburger.svg" alt="">';
+    const image = document.createElement("img");
+    image.src = "./images/icon-hamburger.svg";
+    menu.appendChild(image);
     hamburgerCount = 0;
     navList.style.transform = `scaleY(0)`;
     navList.style["transition-duration"] = "0.4s";
