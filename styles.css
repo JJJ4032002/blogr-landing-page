@@ -1,0 +1,718 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, #ff8f71, #ff3e55);
+  overflow: hidden;
+  border-radius: 0 0 0 95px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding: 2em 0;
+  margin: 0em auto;
+}
+
+.intro-logo {
+  position: absolute;
+  top: -200%;
+  left: -38%;
+  z-index: -1;
+  width: 100%;
+}
+
+.logoAndListItems {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 0.3em;
+  margin: 0 0.5em;
+}
+
+.navList {
+  margin: 0 1.3em;
+}
+
+.navList .uList {
+  display: flex;
+}
+
+.listItems {
+  margin: 0 1.5em;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow-logo {
+  background: url("./images/icon-arrow-light.svg");
+  position: absolute;
+  top: 37%;
+  left: 120%;
+  height: 7px;
+  width: 10px;
+}
+
+.arrow-down {
+  display: none;
+  padding: 0 0.2em;
+}
+
+.LoginSignUp {
+  margin: 0 1em;
+}
+
+.dropDownItems {
+  list-style-type: none;
+  margin: 0.5em 0;
+}
+
+.dropDown {
+  display: none;
+  margin: 1em 0;
+  position: absolute;
+  background: white;
+  padding: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+  text-align: center;
+  transform: scaleY(0%);
+  transition-duration: 0.4s;
+}
+
+#dropDownProduct {
+  left: -45%;
+}
+#dropDownComp {
+  left: -15%;
+}
+#dropDownConn {
+  left: -35%;
+}
+
+.dropDownLinks {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dropDownLinks:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.login {
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.IntroContent {
+  text-align: center;
+  margin: 5em 0;
+  color: white;
+}
+
+.IntroHead {
+  padding: 0.2em 0;
+  margin: 0.3em 0;
+  font-size: 3.5rem;
+}
+
+.IntroContBtn {
+  margin-top: 4em;
+  margin-bottom: 8em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+  border-radius: 25px 25px;
+
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+#StartForFree {
+  padding: 0.9em 1em;
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+#LearnMore {
+  padding: 0.9em 1em;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.SignUpButton {
+  padding: 0.9em 2.8em;
+  margin: 0 0.5em;
+  border-radius: 25px 25px;
+  background-color: white;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.LoginSignUpDrop {
+  display: none;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.DesignFutureCont {
+  margin-top: 6em;
+}
+#MainDesHead {
+  text-align: center;
+  color: blueviolet;
+}
+
+.text {
+  margin: 0 5%;
+  width: 100%;
+}
+
+.DesHead {
+  margin: 1.5em 0em;
+  text-align: justify;
+}
+.DesPara {
+  text-align: justify;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+  margin-bottom: 5em;
+}
+
+.DesignTextIllustrationCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DesIllustrationCont {
+  background: url("./images/illustration-editor-desktop.svg");
+  height: 882px;
+  width: 2000px;
+}
+
+.DesignMobileCont {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background: url("./images/bg-pattern-circles.svg");
+  background-color: #2c1f35;
+  z-index: 2;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+  background-position-x: -80%;
+  border-radius: 0 100px 0 100px;
+}
+
+.circlesDiv {
+  position: absolute;
+  z-index: -1;
+}
+
+.MobileImage {
+  margin: 0 2.5em;
+}
+
+.mobileDesText {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  color: white;
+}
+
+.mobileDesHead {
+  margin-top: -5%;
+  margin-bottom: 3%;
+}
+
+.laptopContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+}
+
+h2 {
+  margin: 1em 0;
+}
+
+.laptopMobile {
+  display: none;
+}
+
+.laptopText {
+  margin: 0 2em;
+}
+
+.laptopImage {
+  margin-left: -21%;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.footer {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8em 0;
+  background-color: #2c1f35;
+  color: white;
+  border-radius: 0 80px 0 0;
+}
+h3 {
+  margin: 1em 0;
+}
+.attribution {
+  padding: 0.5em;
+}
+
+@media (max-width: 970px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  .navList {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 90%;
+    padding: 2em;
+    margin: 0 auto;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scaleY(0);
+    transition-duration: 0.4s;
+  }
+
+  .IntroHead {
+    font-size: 2rem;
+  }
+
+  .listItems {
+    margin: 0.5em 0;
+  }
+
+  .LoginSignUpDrop {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .login {
+    color: black;
+  }
+  .SignUpButton {
+    background: #ff8f71;
+    color: white;
+    width: 150px;
+    margin: 0.5em 0;
+  }
+
+  .dropDown {
+    position: unset;
+    display: none;
+  }
+
+  .arrow-down {
+    display: inline;
+  }
+
+  .nav-links {
+    position: relative;
+  }
+
+  .arrow-logo {
+    background: url("./images/icon-arrow-dark.svg");
+    left: 58%;
+    position: absolute;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .navList .uList {
+    display: flex;
+    flex-direction: column;
+  }
+  .LoginSignUp {
+    display: none;
+  }
+  .nav-links {
+    color: black;
+  }
+
+  .DesignTextIllustrationCont {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .DesIllustrationCont {
+    background: url("./images/illustration-editor-mobile.svg");
+    height: 327px;
+    width: 380px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .text {
+    margin: 0 30px;
+    width: 80%;
+  }
+
+  .DesignMobileCont {
+    flex-direction: column;
+    margin-top: 16em;
+    height: 600px;
+    background-position: 0 -200px;
+    background-size: 600px;
+  }
+
+  .MobileImage {
+    position: absolute;
+    top: -50%;
+  }
+
+  .mobileDesText {
+    margin-top: 8em;
+    text-align: center;
+  }
+
+  .laptopImage {
+    display: none;
+  }
+  .laptopMobile {
+    display: block;
+  }
+
+  .laptopMobileImage {
+    max-width: 400px;
+  }
+
+  .laptopContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .laptopText {
+    text-align: justify;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  .navList {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 90%;
+    padding: 2em;
+    margin: 0 auto;
+    background: white;
+    transform: scaleY(0);
+    transition-duration: 0.4s;
+  }
+
+  .dropDown {
+    position: unset;
+    display: none;
+  }
+
+  .listItems {
+    margin: 0.5em 0;
+  }
+
+  .LoginSignUpDrop {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .login {
+    color: black;
+  }
+  .SignUpButton {
+    background: #ff8f71;
+    color: white;
+    width: 150px;
+    margin: 0.5em 0;
+  }
+
+  .arrow-down {
+    display: inline;
+  }
+
+  .nav-links {
+    position: relative;
+  }
+
+  .arrow-logo {
+    background: url("./images/icon-arrow-dark.svg");
+    left: 70%;
+    position: absolute;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .navList .uList {
+    display: flex;
+    flex-direction: column;
+  }
+  .LoginSignUp {
+    position: absolute;
+    display: none;
+  }
+  .nav-links {
+    color: black;
+  }
+
+  .IntroContBtn {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    border-radius: 25px 25px;
+
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  .intro-logo {
+    position: absolute;
+    top: 0%;
+    left: -70%;
+    z-index: -1;
+    width: 100%;
+  }
+  .introLogoImg {
+    width: 250%;
+  }
+
+  .DesignTextIllustrationCont {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .DesIllustrationCont {
+    background: url("./images/illustration-editor-mobile.svg");
+    height: 327px;
+    width: 395px;
+    margin-left: 0%;
+    margin-right: 0;
+  }
+  .text {
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 330px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobImage {
+    width: 330px;
+  }
+
+  .DesIllustrationCont {
+    background-size: 350px;
+    width: 85%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+  }
+  .DesignFutureCont {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text {
+    font-size: 0.8em;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .mobileDesText {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .MobileImage {
+    position: absolute;
+    top: -25%;
+  }
+  .laptopMobileImage {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 380px) {
+  .DesIllustrationCont {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  .navList {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 170%;
+    padding: 2em;
+    margin: 0 auto;
+    background: white;
+    transform: scaleY(0);
+    transition-duration: 0.4s;
+  }
+
+  #StartForFree {
+    padding: 0.9 0.6em;
+  }
+  #LearnMore {
+    padding: 0.9em 0.6em;
+  }
+
+  .IntroContBtn {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    border-radius: 25px 25px;
+
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  .dropDown {
+    position: unset;
+    display: none;
+  }
+
+  .arrow-down {
+    display: inline;
+  }
+
+  .nav-links {
+    position: relative;
+  }
+
+  .arrow-logo {
+    background: url("./images/icon-arrow-dark.svg");
+    left: 75%;
+    position: absolute;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .listItems {
+    margin: 0.5em 0;
+  }
+
+  .LoginSignUpDrop {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .login {
+    color: black;
+  }
+  .SignUpButton {
+    background: #ff8f71;
+    color: white;
+    width: 150px;
+    margin: 0.5em 0;
+  }
+
+  .navList .uList {
+    display: flex;
+    flex-direction: column;
+  }
+  .LoginSignUp {
+    display: none;
+  }
+  .nav-links {
+    color: black;
+  }
+  .intro-logo {
+    position: absolute;
+    top: 30%;
+    left: -70%;
+    z-index: -1;
+    width: 100%;
+  }
+  .introLogoImg {
+    width: 250%;
+  }
+
+  .DesignTextIllustrationCont {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .DesIllustrationCont {
+    background: url("./images/illustration-editor-mobile.svg");
+    height: 327px;
+    width: 330px;
+    margin-left: -10%;
+    margin-right: 0;
+  }
+  .laptopMobileImage {
+    max-width: 290px;
+  }
+}
