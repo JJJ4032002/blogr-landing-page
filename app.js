@@ -36,7 +36,7 @@ hamburgerMenu.addEventListener("click", function (e) {
     const image = document.createElement("img");
     image.src = "./images/icon-close.svg";
     menu.appendChild(image);
-    navList.style.transform = `scaleY(100%)`;
+    navList.style.transform = `scaleY(1)`;
     navList.style["transition-duration"] = "0.4s";
     hamburgerCount = 1;
     e.stopPropagation();
